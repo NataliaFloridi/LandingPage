@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-image: url('Cloud.jpg'); 
+    background-size: cover;
+    background-blend-mode: overlay; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome {
+    font-size: 30px;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome h1 {
+    margin-top: 0;
+}
+
+.welcome p {
+    margin-bottom: 0;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #1a518b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex-basis: calc(28% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #7bd2ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333; 
+}
+
+.feature h2 {
+    color: #002f61; 
+}
+
+.feature p {
+    color: #000000; 
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.form {
+    margin-top: 30px;
+    width: 100%; 
+    max-width: 400px; 
+}
