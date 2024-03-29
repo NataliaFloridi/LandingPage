@@ -40,15 +40,17 @@
     </div>
 
     <div class="form-wrapper">
-        <form action="#" method="post" class="form">
-            <input type="text" name="nome" placeholder="Nome completo" required><br>
-            <input type="email" name="email" placeholder="Endereço de e-mail" required><br>
-            <input type="text" name="empresa" placeholder="Empresa" required><br>
-            <input type="tel" name="telefone" placeholder="Número de telefone" required><br>
-            <input type="text" name="captcha" placeholder="1 + 1 = ?" required><br> <!-- Campo de entrada 1 + 1 = -->
-            <button type="submit" class="btn">Vamos lá!</button>
+        <form class="form" id="myForm">
+            <button type="submit" class="btn" id="submitButton">Vamos lá!</button>
         </form>
-    </div>    
+    </div>
+    
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfoDeZv1nPpt-AKugQl8NvW0KlOCp6E5oabMJwXMEBMK09KOw/viewform?usp=sf_link"; // Redireciona para o link do Google Forms
+        });
+    </script>
 </div>
 </body>
 </html>
